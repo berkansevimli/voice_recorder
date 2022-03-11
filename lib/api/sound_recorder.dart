@@ -15,7 +15,7 @@ class SoundRecorder {
 
     final status = await Permission.microphone.request();
     if (status != PermissionStatus.granted) {
-      throw RecordingPermissionException("Microphone permission denied");
+      throw RecordingPermissionException("Microphone");
     }
 
     await _audioRecorder!.openAudioSession();
