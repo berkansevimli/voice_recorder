@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       whenFinished: () => setState(() {
                             timerController.stopTimer();
                           }));
+                          
                   if (!isPlaying) {
                     timerController.startTimer();
                   } else {
